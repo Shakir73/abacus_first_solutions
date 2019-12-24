@@ -14,13 +14,13 @@ def get_data():
               "label": _("Store Information"),
               "description": _("Articles which members issue and return."),
             },
-            # {
-            #   "type": "doctype",
-            #   "name": "Team Member",
-            #   "onboard": 1,
-            #   "label": _("Team Member"),
-            #   "description": _("Articles which members issue and return."),
-            # },
+            {
+              "type": "doctype",
+              "name": "Partner",
+              "onboard": 1,
+              "label": _("Store Partners"),
+              "description": _("Articles which members issue and return."),
+            },
             # {
             #   "type": "doctype",
             #   "name": "District Manager",
