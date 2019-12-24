@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "autoname": "PARTNER .####",
+ "creation": "2019-12-23 20:07:52.078046",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "partner_id",
+  "first_name",
+  "last_name",
+  "middle_name",
+  "social_security_number",
+  "column_break_3",
+  "driving_licence_number",
+  "date_of_birth",
+  "mobile_phone_number",
+  "partner_address_section",
+  "street",
+  "city",
+  "column_break_13",
+  "state",
+  "zip",
+  "share_section",
+  "share",
+  "column_break_17",
+  "with_effect_from",
+  "section_break_19",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "social_security_number",
+   "fieldtype": "Int",
+   "label": "Social Security Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driving_licence_number",
+   "fieldtype": "Data",
+   "label": "Driving Licence Number"
+  },
+  {
+   "fieldname": "mobile_phone_number",
+   "fieldtype": "Data",
+   "label": "Mobile Phone Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "partner_address_section",
+   "fieldtype": "Section Break",
+   "label": "Partner Address"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street",
+   "options": "Business Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "USA State"
+  },
+  {
+   "fieldname": "zip",
+   "fieldtype": "Data",
+   "label": "ZIP"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "share_section",
+   "fieldtype": "Section Break",
+   "label": "Share"
+  },
+  {
+   "fieldname": "share",
+   "fieldtype": "Float",
+   "label": "Share",
+   "reqd": 1
+  },
+  {
+   "fieldname": "with_effect_from",
+   "fieldtype": "Date",
+   "label": "With Effect From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break",
+   "label": "Any Special Note or Description"
+  },
+  {
+   "fieldname": "partner_id",
+   "fieldtype": "Select",
+   "label": "Partner ID",
+   "options": "PARTNER"
+  }
+ ],
+ "links": [],
+ "modified": "2019-12-23 21:02:20.454002",
+ "modified_by": "Administrator",
+ "module": "Master Data",
+ "name": "Partner",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

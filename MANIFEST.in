@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include abacus_first_solutions *.css
+recursive-include abacus_first_solutions *.csv
+recursive-include abacus_first_solutions *.html
+recursive-include abacus_first_solutions *.ico
+recursive-include abacus_first_solutions *.js
+recursive-include abacus_first_solutions *.json
+recursive-include abacus_first_solutions *.md
+recursive-include abacus_first_solutions *.png
+recursive-include abacus_first_solutions *.py
+recursive-include abacus_first_solutions *.svg
+recursive-include abacus_first_solutions *.txt
+recursive-exclude abacus_first_solutions *.pyc

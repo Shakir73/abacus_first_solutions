@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "autoname": "field:store_no",
+ "creation": "2019-12-21 01:49:24.223987",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "store_details_section",
+  "store_no",
+  "legal_name",
+  "usa_state",
+  "column_break_4",
+  "quickbooks_code",
+  "doing_business_as",
+  "legal_mailing_address",
+  "business_address_section_section",
+  "street",
+  "city",
+  "column_break_12",
+  "state",
+  "zip",
+  "store_bank_information_section",
+  "bank_name",
+  "bank_account_type",
+  "column_break_18",
+  "account_title",
+  "account_no",
+  "routing_number",
+  "partners_information_and_share_section",
+  "partner"
+ ],
+ "fields": [
+  {
+   "fieldname": "store_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Store No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "legal_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Legal Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quickbooks_code",
+   "fieldtype": "Data",
+   "label": "QuickBooks Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "doing_business_as",
+   "fieldtype": "Data",
+   "label": "Doing Business As",
+   "reqd": 1
+  },
+  {
+   "fieldname": "legal_mailing_address",
+   "fieldtype": "Data",
+   "label": "Legal Mailing Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "store_details_section",
+   "fieldtype": "Section Break",
+   "label": "Store Details"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "collapsible": 1,
+   "fieldname": "business_address_section_section",
+   "fieldtype": "Section Break",
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Store's Business Address"
+  },
+  {
+   "fieldname": "usa_state",
+   "fieldtype": "Link",
+   "label": "USA State",
+   "options": "USA State"
+  },
+  {
+   "fieldname": "street",
+   "fieldtype": "Data",
+   "label": "Street"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "USA State"
+  },
+  {
+   "fieldname": "zip",
+   "fieldtype": "Data",
+   "label": "ZIP"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "store_bank_information_section",
+   "fieldtype": "Section Break",
+   "label": "Store Bank Information"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "bank_account_type",
+   "fieldtype": "Select",
+   "label": "Bank Account Type",
+   "options": "Savings\nOthers"
+  },
+  {
+   "bold": 1,
+   "fieldname": "account_title",
+   "fieldtype": "Data",
+   "label": "Account Title"
+  },
+  {
+   "fieldname": "account_no",
+   "fieldtype": "Data",
+   "label": "Account No."
+  },
+  {
+   "fieldname": "routing_number",
+   "fieldtype": "Int",
+   "label": "Routing Number"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "partners_information_and_share_section",
+   "fieldtype": "Section Break",
+   "label": "Partner(s) Information and Share"
+  },
+  {
+   "fieldname": "partner",
+   "fieldtype": "Table",
+   "label": "Partner",
+   "options": "Partner"
+  }
+ ],
+ "links": [],
+ "modified": "2019-12-23 20:20:58.457830",
+ "modified_by": "Administrator",
+ "module": "Master Data",
+ "name": "Store Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "store_no",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "store_no",
+ "track_changes": 1
+}
