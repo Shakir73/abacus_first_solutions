@@ -106,9 +106,8 @@
   },
   {
    "fieldname": "state",
-   "fieldtype": "Link",
-   "label": "State",
-   "options": "USA State"
+   "fieldtype": "Read Only",
+   "label": "State"
   },
   {
    "fieldname": "zip",
@@ -166,7 +165,7 @@
   }
  ],
  "links": [],
- "modified": "2019-12-23 20:20:58.457830",
+ "modified": "2019-12-24 21:24:48.435746",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Store Information",
