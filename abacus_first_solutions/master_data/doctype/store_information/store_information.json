@@ -88,7 +88,8 @@
    "fieldname": "usa_state",
    "fieldtype": "Link",
    "label": "USA State",
-   "options": "USA State"
+   "options": "USA State",
+   "reqd": 1
   },
   {
    "fieldname": "street",
@@ -161,11 +162,11 @@
    "fieldname": "partner",
    "fieldtype": "Table",
    "label": "Partner",
-   "options": "Partner"
+   "options": "Partner Details"
   }
  ],
  "links": [],
- "modified": "2019-12-24 21:24:48.435746",
+ "modified": "2019-12-25 04:17:58.711509",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Store Information",

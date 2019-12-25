@@ -22,9 +22,11 @@
   "state",
   "zip",
   "share_section",
+  "share_id",
   "share",
-  "column_break_17",
+  "column_break_19",
   "with_effect_from",
+  "status",
   "section_break_19",
   "remarks"
  ],
@@ -118,22 +120,6 @@
    "label": "Share"
   },
   {
-   "fieldname": "share",
-   "fieldtype": "Float",
-   "label": "Share",
-   "reqd": 1
-  },
-  {
-   "fieldname": "with_effect_from",
-   "fieldtype": "Date",
-   "label": "With Effect From",
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_17",
-   "fieldtype": "Column Break"
-  },
-  {
    "collapsible": 1,
    "fieldname": "section_break_19",
    "fieldtype": "Section Break",
@@ -143,11 +129,41 @@
    "fieldname": "partner_id",
    "fieldtype": "Select",
    "label": "Partner ID",
-   "options": "PARTNER"
+   "options": "PARTNER .####"
+  },
+  {
+   "fieldname": "share_id",
+   "fieldtype": "Link",
+   "label": "Share ID",
+   "options": "Store Share",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "share_id.with_effect_from",
+   "fieldname": "with_effect_from",
+   "fieldtype": "Read Only",
+   "label": "With Effect From"
+  },
+  {
+   "fetch_from": "share_id.status",
+   "fieldname": "status",
+   "fieldtype": "Read Only",
+   "label": "Status"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "share_id.share",
+   "fieldname": "share",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Share %"
   }
  ],
  "links": [],
- "modified": "2019-12-23 21:02:20.454002",
+ "modified": "2019-12-25 04:02:35.103791",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Partner",

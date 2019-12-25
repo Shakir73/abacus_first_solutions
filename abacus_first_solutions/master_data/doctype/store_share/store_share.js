@@ -1,7 +1,7 @@
 // Copyright (c) 2019, AFS and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Share', {
+frappe.ui.form.on('Store Share', {
 	// refresh: function(frm) {
 
 	// }
