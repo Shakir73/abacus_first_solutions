@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2019-12-25 20:47:12.036952",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "share_holder_information_section",
+  "naming_series",
+  "partner_id",
+  "column_break_4",
+  "first_name",
+  "last_name",
+  "store_information_section",
+  "store_no",
+  "column_break_9",
+  "legal_name",
+  "share_information_section",
+  "share_",
+  "column_break_13",
+  "with_effect_from",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "partner_id",
+   "fieldtype": "Link",
+   "label": "Partner ID",
+   "options": "Share Holder Information",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "partner_id.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "First Name"
+  },
+  {
+   "fetch_from": "partner_id.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "share_",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Share %",
+   "reqd": 1
+  },
+  {
+   "fieldname": "with_effect_from",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "With Effect From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nDe-Active"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Share Holder ID",
+   "options": "SHR .-"
+  },
+  {
+   "fieldname": "store_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Store No.",
+   "options": "Store Information",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "store_no.legal_name",
+   "fieldname": "legal_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Legal Name"
+  },
+  {
+   "fieldname": "share_holder_information_section",
+   "fieldtype": "Section Break",
+   "label": "Share Holder Information"
+  },
+  {
+   "fieldname": "store_information_section",
+   "fieldtype": "Section Break",
+   "label": "Store Information"
+  },
+  {
+   "fieldname": "share_information_section",
+   "fieldtype": "Section Break",
+   "label": "Share Information"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "links": [],
+ "modified": "2019-12-26 02:21:17.240351",
+ "modified_by": "Administrator",
+ "module": "Master Data",
+ "name": "Share",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

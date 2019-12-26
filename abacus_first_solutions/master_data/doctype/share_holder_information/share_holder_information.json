@@ -1,12 +1,12 @@
 {
  "actions": [],
- "autoname": "PARTNER .####",
- "creation": "2019-12-23 20:07:52.078046",
+ "autoname": "naming_series:",
+ "creation": "2019-12-25 20:08:37.340116",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "partner_id",
+  "naming_series",
   "first_name",
   "last_name",
   "middle_name",
@@ -22,59 +22,16 @@
   "state",
   "zip",
   "share_section",
-  "share_id",
-  "share",
-  "column_break_19",
-  "with_effect_from",
-  "status",
   "section_break_19",
   "remarks"
  ],
  "fields": [
-  {
-   "fieldname": "social_security_number",
-   "fieldtype": "Int",
-   "label": "Social Security Number",
-   "reqd": 1
-  },
-  {
-   "fieldname": "driving_licence_number",
-   "fieldtype": "Data",
-   "label": "Driving Licence Number"
-  },
-  {
-   "fieldname": "mobile_phone_number",
-   "fieldtype": "Data",
-   "label": "Mobile Phone Number",
-   "options": "Phone"
-  },
-  {
-   "fieldname": "date_of_birth",
-   "fieldtype": "Date",
-   "label": "Date of Birth"
-  },
-  {
-   "fieldname": "remarks",
-   "fieldtype": "Text Editor",
-   "label": "Remarks"
-  },
-  {
-   "collapsible": 1,
-   "fieldname": "partner_address_section",
-   "fieldtype": "Section Break",
-   "label": "Partner Address"
-  },
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "First Name",
    "reqd": 1
-  },
-  {
-   "fieldname": "middle_name",
-   "fieldtype": "Data",
-   "label": "Middle Name"
   },
   {
    "fieldname": "last_name",
@@ -84,19 +41,55 @@
    "reqd": 1
   },
   {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "social_security_number",
+   "fieldtype": "Int",
+   "label": "Social Security Number",
+   "reqd": 1
+  },
+  {
    "fieldname": "column_break_3",
    "fieldtype": "Column Break"
   },
   {
+   "fieldname": "driving_licence_number",
+   "fieldtype": "Data",
+   "label": "Driving Licence Number"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "mobile_phone_number",
+   "fieldtype": "Data",
+   "label": "Mobile Phone Number",
+   "options": "Phone"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "partner_address_section",
+   "fieldtype": "Section Break",
+   "label": "Partner Address"
+  },
+  {
    "fieldname": "street",
    "fieldtype": "Data",
-   "label": "Street",
-   "options": "Business Address"
+   "label": "Street"
   },
   {
    "fieldname": "city",
    "fieldtype": "Data",
    "label": "City"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "state",
@@ -108,10 +101,6 @@
    "fieldname": "zip",
    "fieldtype": "Data",
    "label": "ZIP"
-  },
-  {
-   "fieldname": "column_break_13",
-   "fieldtype": "Column Break"
   },
   {
    "collapsible": 1,
@@ -126,47 +115,23 @@
    "label": "Any Special Note or Description"
   },
   {
-   "fieldname": "partner_id",
+   "fieldname": "remarks",
+   "fieldtype": "Text Editor",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Partner ID",
-   "options": "PARTNER .####"
-  },
-  {
-   "fieldname": "share_id",
-   "fieldtype": "Link",
-   "label": "Share ID",
-   "options": "Store Share",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "share_id.with_effect_from",
-   "fieldname": "with_effect_from",
-   "fieldtype": "Read Only",
-   "label": "With Effect From"
-  },
-  {
-   "fetch_from": "share_id.status",
-   "fieldname": "status",
-   "fieldtype": "Read Only",
-   "label": "Status"
-  },
-  {
-   "fieldname": "column_break_19",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fetch_from": "share_id.share",
-   "fieldname": "share",
-   "fieldtype": "Read Only",
-   "in_list_view": 1,
-   "label": "Share %"
+   "options": "SHR_HLD_INFO .-",
+   "search_index": 1
   }
  ],
  "links": [],
- "modified": "2019-12-25 04:02:35.103791",
+ "modified": "2019-12-26 02:23:51.604619",
  "modified_by": "Administrator",
  "module": "Master Data",
- "name": "Partner",
+ "name": "Share Holder Information",
  "owner": "Administrator",
  "permissions": [
   {

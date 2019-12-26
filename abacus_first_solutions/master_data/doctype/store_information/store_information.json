@@ -29,7 +29,7 @@
   "account_no",
   "routing_number",
   "partners_information_and_share_section",
-  "partner"
+  "share_holder_id"
  ],
  "fields": [
   {
@@ -159,14 +159,14 @@
    "label": "Partner(s) Information and Share"
   },
   {
-   "fieldname": "partner",
-   "fieldtype": "Table",
-   "label": "Partner",
-   "options": "Partner Details"
+   "fieldname": "share_holder_id",
+   "fieldtype": "Link",
+   "label": "Share Holder ID",
+   "options": "Share"
   }
  ],
  "links": [],
- "modified": "2019-12-25 04:17:58.711509",
+ "modified": "2019-12-25 23:09:26.840709",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Store Information",
