@@ -1,11 +1,12 @@
 {
  "actions": [],
- "autoname": "field:state",
+ "autoname": "field:id",
  "creation": "2019-12-21 02:12:59.422495",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "id",
   "state"
  ],
  "fields": [
@@ -13,11 +14,20 @@
    "fieldname": "state",
    "fieldtype": "Data",
    "label": "State",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID",
+   "reqd": 1,
    "unique": 1
   }
  ],
  "links": [],
- "modified": "2019-12-21 03:25:03.891447",
+ "modified": "2019-12-27 00:39:15.340439",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "USA State",
@@ -37,9 +47,9 @@
   }
  ],
  "quick_entry": 1,
- "search_fields": "state",
+ "search_fields": "id",
  "sort_field": "modified",
  "sort_order": "ASC",
- "title_field": "state",
+ "title_field": "id",
  "track_changes": 1
 }

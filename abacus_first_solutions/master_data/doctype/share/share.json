@@ -9,6 +9,7 @@
   "share_holder_information_section",
   "naming_series",
   "partner_id",
+  "full_name",
   "column_break_4",
   "first_name",
   "last_name",
@@ -27,7 +28,7 @@
    "fieldname": "partner_id",
    "fieldtype": "Link",
    "label": "Partner ID",
-   "options": "Share Holder Information",
+   "options": "Partner Information",
    "reqd": 1
   },
   {
@@ -63,7 +64,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Status",
-   "options": "Active\nDe-Active"
+   "options": "Active\nInactive"
   },
   {
    "fieldname": "naming_series",
@@ -80,7 +81,6 @@
    "reqd": 1
   },
   {
-   "fetch_from": "store_no.legal_name",
    "fieldname": "legal_name",
    "fieldtype": "Read Only",
    "in_list_view": 1,
@@ -112,10 +112,15 @@
   {
    "fieldname": "column_break_13",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "label": "Full Name"
   }
  ],
  "links": [],
- "modified": "2019-12-26 02:21:17.240351",
+ "modified": "2019-12-28 23:50:05.955411",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Share",

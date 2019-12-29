@@ -9,6 +9,7 @@
   "naming_series",
   "first_name",
   "last_name",
+  "full_name",
   "middle_name",
   "social_security_number",
   "column_break_3",
@@ -125,13 +126,20 @@
    "label": "Partner ID",
    "options": "SHR_HLD_INFO .-",
    "search_index": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "search_index": 1
   }
  ],
  "links": [],
- "modified": "2019-12-26 02:23:51.604619",
+ "modified": "2019-12-26 21:28:44.152899",
  "modified_by": "Administrator",
  "module": "Master Data",
- "name": "Share Holder Information",
+ "name": "Partner Information",
  "owner": "Administrator",
  "permissions": [
   {
@@ -149,5 +157,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "full_name",
  "track_changes": 1
 }

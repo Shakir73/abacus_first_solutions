@@ -16,9 +16,9 @@ def get_data():
             },
             {
               "type": "doctype",
-              "name": "Share Holder Information",
+              "name": "Partner Information",
               "onboard": 1,
-              "label": _("Share Holder Information"),
+              "label": _("Partner Information"),
               "description": _("Articles which members issue and return."),
             },
             {

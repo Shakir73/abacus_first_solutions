@@ -15,6 +15,12 @@
   "quickbooks_code",
   "doing_business_as",
   "legal_mailing_address",
+  "government_information_section",
+  "fein",
+  "sales_tax_no",
+  "column_break_13",
+  "withholding_id",
+  "suid",
   "business_address_section_section",
   "street",
   "city",
@@ -28,11 +34,11 @@
   "account_title",
   "account_no",
   "routing_number",
-  "partners_information_and_share_section",
-  "share_holder_id"
+  "partners_information_and_share_section"
  ],
  "fields": [
   {
+   "description": "Enter Store Number",
    "fieldname": "store_no",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -41,28 +47,32 @@
    "unique": 1
   },
   {
+   "description": "Store/Business Legal Name",
    "fieldname": "legal_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Legal Name",
+   "label": "Business Name",
    "reqd": 1
   },
   {
+   "description": "QuickBooks Code",
    "fieldname": "quickbooks_code",
    "fieldtype": "Data",
-   "label": "QuickBooks Code",
+   "label": "QB Code",
    "reqd": 1
   },
   {
+   "description": "Doing Business As",
    "fieldname": "doing_business_as",
    "fieldtype": "Data",
-   "label": "Doing Business As",
+   "label": "DBA",
    "reqd": 1
   },
   {
+   "description": "Legal Mailing Address",
    "fieldname": "legal_mailing_address",
    "fieldtype": "Data",
-   "label": "Legal Mailing Address",
+   "label": "Legal Address",
    "reqd": 1
   },
   {
@@ -85,9 +95,11 @@
    "label": "Store's Business Address"
   },
   {
+   "description": "USA State ID",
    "fieldname": "usa_state",
    "fieldtype": "Link",
-   "label": "USA State",
+   "in_list_view": 1,
+   "label": "State",
    "options": "USA State",
    "reqd": 1
   },
@@ -153,23 +165,56 @@
    "fieldtype": "Column Break"
   },
   {
-   "collapsible": 1,
    "fieldname": "partners_information_and_share_section",
    "fieldtype": "Section Break",
    "label": "Partner(s) Information and Share"
   },
   {
-   "fieldname": "share_holder_id",
-   "fieldtype": "Link",
-   "label": "Share Holder ID",
-   "options": "Share"
+   "collapsible": 1,
+   "fieldname": "government_information_section",
+   "fieldtype": "Section Break",
+   "label": "Government Information"
+  },
+  {
+   "description": "Sales Tax Number",
+   "fieldname": "sales_tax_no",
+   "fieldtype": "Data",
+   "label": "Sales Tax No",
+   "reqd": 1
+  },
+  {
+   "description": "Withholding Tax ID Number",
+   "fieldname": "withholding_id",
+   "fieldtype": "Data",
+   "label": "Withholding ID",
+   "reqd": 1
+  },
+  {
+   "description": "State Unemployment ID Number",
+   "fieldname": "suid",
+   "fieldtype": "Data",
+   "label": "SUID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Federal Employer Identification Number",
+   "fieldname": "fein",
+   "fieldtype": "Data",
+   "label": "FEIN",
+   "length": 9,
+   "reqd": 1
   }
  ],
  "links": [],
- "modified": "2019-12-25 23:09:26.840709",
+ "modified": "2019-12-27 20:57:09.159070",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Store Information",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {
@@ -185,9 +230,9 @@
    "write": 1
   }
  ],
- "search_fields": "store_no",
+ "search_fields": "store_no, legal_name",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "store_no",
+ "title_field": "legal_name",
  "track_changes": 1
 }
