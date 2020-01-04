@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field:store_no",
+ "autoname": "field:legal_name",
  "creation": "2019-12-21 01:49:24.223987",
  "doctype": "DocType",
  "document_type": "Document",
@@ -34,7 +34,9 @@
   "account_title",
   "account_no",
   "routing_number",
-  "partners_information_and_share_section"
+  "partners_information_and_share_section",
+  "partner",
+  "total_per"
  ],
  "fields": [
   {
@@ -42,9 +44,7 @@
    "fieldname": "store_no",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Store No",
-   "reqd": 1,
-   "unique": 1
+   "label": "Store No"
   },
   {
    "description": "Store/Business Legal Name",
@@ -52,28 +52,26 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Business Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "description": "QuickBooks Code",
    "fieldname": "quickbooks_code",
    "fieldtype": "Data",
-   "label": "QB Code",
-   "reqd": 1
+   "label": "QB Code"
   },
   {
    "description": "Doing Business As",
    "fieldname": "doing_business_as",
    "fieldtype": "Data",
-   "label": "DBA",
-   "reqd": 1
+   "label": "DBA"
   },
   {
    "description": "Legal Mailing Address",
    "fieldname": "legal_mailing_address",
    "fieldtype": "Data",
-   "label": "Legal Address",
-   "reqd": 1
+   "label": "Legal Address"
   },
   {
    "fieldname": "store_details_section",
@@ -96,12 +94,12 @@
   },
   {
    "description": "USA State ID",
+   "fetch_from": "usa_state.id",
    "fieldname": "usa_state",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "State",
-   "options": "USA State",
-   "reqd": 1
+   "options": "USA State"
   },
   {
    "fieldname": "street",
@@ -157,7 +155,7 @@
   },
   {
    "fieldname": "routing_number",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Routing Number"
   },
   {
@@ -179,22 +177,19 @@
    "description": "Sales Tax Number",
    "fieldname": "sales_tax_no",
    "fieldtype": "Data",
-   "label": "Sales Tax No",
-   "reqd": 1
+   "label": "Sales Tax No"
   },
   {
    "description": "Withholding Tax ID Number",
    "fieldname": "withholding_id",
    "fieldtype": "Data",
-   "label": "Withholding ID",
-   "reqd": 1
+   "label": "Withholding ID"
   },
   {
    "description": "State Unemployment ID Number",
    "fieldname": "suid",
    "fieldtype": "Data",
-   "label": "SUID",
-   "reqd": 1
+   "label": "SUID"
   },
   {
    "fieldname": "column_break_13",
@@ -204,13 +199,23 @@
    "description": "Federal Employer Identification Number",
    "fieldname": "fein",
    "fieldtype": "Data",
-   "label": "FEIN",
-   "length": 9,
-   "reqd": 1
+   "label": "FEIN"
+  },
+  {
+   "fieldname": "total_per",
+   "fieldtype": "Float",
+   "label": "Total Percentage"
+  },
+  {
+   "fieldname": "partner",
+   "fieldtype": "Table",
+   "label": "Partner",
+   "options": "Share",
+   "search_index": 1
   }
  ],
  "links": [],
- "modified": "2019-12-27 20:57:09.159070",
+ "modified": "2020-01-03 21:24:54.643135",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Store Information",

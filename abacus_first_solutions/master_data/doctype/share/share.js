@@ -1,35 +1,19 @@
 // Copyright (c) 2019, AFS and contributors
 // For license information, please see license.txt
 
-frappe.ui.form.on('Share', {
-	refresh: function(frm) {
-	    frm.add_fetch('partner_id', 'first_name', 'first_name');
-	    frm.add_fetch('partner_id', 'last_name', 'last_name');
-	}
-});
-
-frappe.ui.form.on('Share', {
-	refresh: function(frm) {
-		frm.add_fetch('store_no', 'legal_name', 'legal_name');
-		// add_fetch(link_fieldname, source_fieldname, target_fieldname)
-	}
-});
-
 frappe.ui.form.on("Share", {
-    "partner_id" : function(frm) {
-        frappe.call({
-            "method": "frappe.client.get",
-            args: {
-                doctype: "Partner Information",
-                name: frm.doc.partner_id
-            },
-            callback: function (data) {
-                frappe.model.set_value(frm.doctype,
-                    frm.docname, "full_name",
-                    data.message.first_name
-                    + (data.message.last_name ?
-                        (" " + data.message.last_name) : ""))
-            }
-        })
+  share_:function(frm, cdt, cdn){
+  var d = locals[cdt][cdn];
+  var total = 0;
+  frm.doc.partner.forEach(function(d) { total += d.share_; });
+  frm.set_value("total_per", total);
+  refresh_field("total_per");
+},
+  partner_remove:function(frm, cdt, cdn){
+  var d = locals[cdt][cdn];
+  var total = 0;
+  frm.doc.partner.forEach(function(d) { total += d.share_; });
+  frm.set_value("total_per", total);
+  refresh_field("total_per");
     }
-});
+  });
