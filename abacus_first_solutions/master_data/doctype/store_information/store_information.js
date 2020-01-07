@@ -1,32 +1,31 @@
-// Copyright (c) 2019, AFS and contributors
-// For license information, please see license.txt
 
-// frappe.ui.form.on("Store Information", "usa_state", function(frm) {
-//     frm.set_value('state', frm.doc.usa_state)
-// });
 
-// frappe.ui.form.on("Store Information", "partner_id", function(frm) {
-//     frm.set_value('full_name', frm.doc.first_name +" "+ frm.doc.last_name)
-// });
 
-// frappe.ui.form.on('Store Information', {
-// 	refresh: function(frm) {
-// 		frm.add_fetch('usa_state', 'state', 'usa_state');
-// 		// add_fetch(link_fieldname, source_fieldname, target_fieldname)
-// 	}
-// });
+// frappe.ui.form.on('Share', {
+//     share_:function(frm, cdt, cdn){
+//     var d = locals[cdt][cdn];
+//     var total = 0;
+//     frm.doc.partner.forEach(function(d) { total += d.share_; });
+//     frm.set_value('total_per', total);
+//     refresh_field('total_per');
+//     },
+//     partner_remove:function(frm, cdt, cdn){
+//     var d = locals[cdt][cdn];
+//     var total = 0;
+//     frm.doc.partner.forEach(function(d) { total += d.share_; });
+//     frm.set_value('total_per', total);
+//     refresh_field('total_per');
+//     }
+//     });
 
-frappe.ui.form.on('Store Information', {
-	refresh: function(frm) {
-		frm.add_fetch('usa_state', 'id', 'state');
-		// add_fetch(link_fieldname, source_fieldname, target_fieldname)
-	}
+
+frappe.ui.form.on("Share", {
+    share_: function(frm) {
+    var grand_total = 0;
+    for(var i=0;i<frm.doc.partner.length;i++) {
+        grand_total += frm.doc.partner[i].share_;
+    }
+    frm.set_value("total_per", grand_total);
+    refresh_field('total_per');
+}
 });
-
-frappe.ui.form.on("Store Information", {
-	"partner_share": function(frm) {
-        frm.add_fetch("partner_share", "store_no", "store_id");
-        // add_fetch(link_fieldname, source_fieldname, target_fieldname)
-	}
-});
-

@@ -204,18 +204,21 @@
   {
    "fieldname": "total_per",
    "fieldtype": "Float",
-   "label": "Total Percentage"
+   "in_list_view": 1,
+   "label": "Total Percentage",
+   "read_only": 1
   },
   {
    "fieldname": "partner",
    "fieldtype": "Table",
+   "in_standard_filter": 1,
    "label": "Partner",
    "options": "Share",
    "search_index": 1
   }
  ],
  "links": [],
- "modified": "2020-01-03 21:24:54.643135",
+ "modified": "2020-01-06 03:24:33.779355",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Store Information",
