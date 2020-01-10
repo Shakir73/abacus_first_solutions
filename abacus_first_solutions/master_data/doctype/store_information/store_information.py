@@ -8,10 +8,15 @@ from frappe import _
 from frappe.model.document import Document
 
 class StoreInformation(Document):
-    
+	def __setup__(self):
+		self.onload()
+	def onload(self):
+		pass
+		
+
 	"""Calculate total percentage and warn duplicate."""
 	def validate(self):
-		
+
 		found = []
 		self.total_per = 0
 		for d in self.partner:
@@ -22,5 +27,8 @@ class StoreInformation(Document):
 			found.append(d.partner_id)
 			if self.total_per > 100:
 				frappe.throw(_(f"Total Share is '{self.total_per}', not equal to 100"))
-			
+			self.total_share_holders = len(found)
 
+		# for fn in self.managing_partner:
+		# 	if not fn.full_name:
+		# 		fn.full_name = f"{fn.first_name} {fn.last_name}"

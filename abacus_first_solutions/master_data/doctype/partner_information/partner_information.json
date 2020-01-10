@@ -23,6 +23,9 @@
   "state",
   "zip",
   "share_section",
+  "store",
+  "section",
+  "total_stores",
   "section_break_19",
   "remarks"
  ],
@@ -98,10 +101,9 @@
    "label": "ZIP"
   },
   {
-   "collapsible": 1,
    "fieldname": "share_section",
    "fieldtype": "Section Break",
-   "label": "Share"
+   "label": "Partnership in Store(s)"
   },
   {
    "collapsible": 1,
@@ -116,9 +118,10 @@
   },
   {
    "fieldname": "full_name",
-   "fieldtype": "Read Only",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Full Name"
+   "label": "Full Name",
+   "read_only": 1
   },
   {
    "fieldname": "email_address",
@@ -132,11 +135,27 @@
    "fieldtype": "Data",
    "label": "Last Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Table",
+   "label": "Store(s)",
+   "options": "Partner Store"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_stores",
+   "fieldtype": "Int",
+   "label": "Total Store(s)",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2019-12-31 20:46:37.705025",
- "modified_by": "zakir@ansari.com",
+ "modified": "2020-01-10 00:18:40.042068",
+ "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Partner Information",
  "owner": "Administrator",
