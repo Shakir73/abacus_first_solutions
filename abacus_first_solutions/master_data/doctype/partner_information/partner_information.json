@@ -155,7 +155,7 @@
   }
  ],
  "links": [],
- "modified": "2020-01-10 06:38:12.817069",
+ "modified": "2020-01-11 03:42:27.094115",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Partner Information",
@@ -170,6 +170,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CM",
    "share": 1,
    "write": 1
   }

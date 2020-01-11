@@ -255,7 +255,7 @@
   }
  ],
  "links": [],
- "modified": "2020-01-10 06:27:23.384290",
+ "modified": "2020-01-11 03:42:44.953663",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Store Information",
@@ -271,6 +271,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CM",
    "share": 1,
    "write": 1
   }
