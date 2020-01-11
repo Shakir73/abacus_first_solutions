@@ -9,9 +9,9 @@ def get_data():
         "items": [
             {
               "type": "doctype",
-              "name": "Share",
+              "name": "Store Information",
               "onboard": 1,
-              "label": _("Share"),
+              "label": _("Store Information"),
               "description": _("Articles which members issue and return."),
             },
             {
@@ -21,13 +21,7 @@ def get_data():
               "label": _("Partner Information"),
               "description": _("Articles which members issue and return."),
             },
-            {
-              "type": "doctype",
-              "name": "Store Information",
-              "onboard": 1,
-              "label": _("Store Information"),
-              "description": _("Articles which members issue and return."),
-            },
+            
             # {
             #   "type": "doctype",
             #   "name": "District",

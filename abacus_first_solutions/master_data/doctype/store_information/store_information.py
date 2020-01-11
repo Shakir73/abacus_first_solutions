@@ -27,7 +27,7 @@ class StoreInformation(Document):
 			found.append(d.partner_id)
 			if self.total_per > 100:
 				frappe.throw(_(f"Total Share is '{self.total_per}', not equal to 100"))
-			self.total_share_holders = len(found)
+		self.total_share_holders = len(found)
 
 		# for fn in self.managing_partner:
 		# 	if not fn.full_name:

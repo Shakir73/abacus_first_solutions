@@ -30,5 +30,7 @@ class PartnerInformation(Document):
 
 
 	def validate(self):
+		# if self.total_stores == 0:
+		# 	self.enabled = 0
 		self.store = []
 		self.full_name = f"{self.first_name} {self.last_name}"
