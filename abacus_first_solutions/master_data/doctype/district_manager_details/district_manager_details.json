@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "creation": "2020-01-14 02:23:42.922283",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "district_manager",
+  "full_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "district_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "District Manager",
+   "options": "District Manager",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "district_manager.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2020-01-14 02:33:51.457273",
+ "modified_by": "Administrator",
+ "module": "Master Data",
+ "name": "District Manager Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

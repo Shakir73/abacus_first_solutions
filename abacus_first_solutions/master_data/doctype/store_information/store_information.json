@@ -42,7 +42,10 @@
   "total_share_holders",
   "managing_partner_details_section",
   "managing_partner",
-  "column_break_33"
+  "district_manager_and_shfit_manager_section",
+  "district_manager",
+  "column_break_38",
+  "shift_manager"
  ],
  "fields": [
   {
@@ -235,10 +238,6 @@
    "options": "Managing Partner"
   },
   {
-   "fieldname": "column_break_33",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "total_share_holders",
    "fieldtype": "Int",
    "in_list_view": 1,
@@ -252,10 +251,32 @@
   {
    "fieldname": "column_break_32",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "district_manager",
+   "fieldtype": "Table",
+   "label": "District Manager",
+   "options": "District Manager Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "district_manager_and_shfit_manager_section",
+   "fieldtype": "Section Break",
+   "label": "District Manager and Shfit Manager"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shift_manager",
+   "fieldtype": "Table",
+   "label": "Shift Manager",
+   "options": "Shift Manager Details"
   }
  ],
  "links": [],
- "modified": "2020-01-11 03:42:44.953663",
+ "modified": "2020-01-14 02:37:31.948339",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Store Information",
