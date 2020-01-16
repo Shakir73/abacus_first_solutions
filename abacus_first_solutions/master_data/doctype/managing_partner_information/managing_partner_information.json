@@ -1,7 +1,7 @@
 {
  "actions": [],
- "autoname": "PRT-.##",
- "creation": "2019-12-25 20:08:37.340116",
+ "autoname": "MGING-PRT-.##",
+ "creation": "2020-01-15 03:39:13.213217",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -23,11 +23,9 @@
   "state",
   "zip",
   "share_section",
-  "store",
-  "section",
-  "total_stores",
+  "managing_partner",
   "section_break_19",
-  "remarks"
+  "total_stores"
  ],
  "fields": [
   {
@@ -37,9 +35,26 @@
    "reqd": 1
   },
   {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
    "fieldname": "middle_name",
    "fieldtype": "Data",
    "label": "Middle Name"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "social_security_number",
@@ -47,10 +62,6 @@
    "in_list_view": 1,
    "label": "Social Security Number",
    "search_index": 1
-  },
-  {
-   "fieldname": "column_break_3",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "driving_licence_number",
@@ -68,6 +79,13 @@
    "in_list_view": 1,
    "label": "Mobile Phone Number",
    "options": "Phone"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email Address",
+   "options": "Email"
   },
   {
    "collapsible": 1,
@@ -102,64 +120,31 @@
   },
   {
    "fieldname": "share_section",
-   "fieldtype": "Section Break",
-   "label": "Partnership in Store(s)"
+   "fieldtype": "Section Break"
   },
   {
-   "collapsible": 1,
-   "fieldname": "section_break_19",
-   "fieldtype": "Section Break",
-   "label": "Any Special Note or Description"
-  },
-  {
-   "fieldname": "remarks",
-   "fieldtype": "Text Editor",
-   "label": "Remarks"
-  },
-  {
-   "fieldname": "full_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Full Name",
-   "read_only": 1
-  },
-  {
-   "fieldname": "email_address",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Email Address",
-   "options": "Email"
-  },
-  {
-   "fieldname": "last_name",
-   "fieldtype": "Data",
-   "label": "Last Name",
-   "reqd": 1
-  },
-  {
-   "fieldname": "store",
+   "fieldname": "managing_partner",
    "fieldtype": "Table",
-   "label": "Partnership",
-   "options": "Partner Store",
+   "label": "Managing Partner(s)",
+   "options": "Managing Partner Store",
    "read_only": 1
   },
   {
-   "fieldname": "section",
+   "fieldname": "section_break_19",
    "fieldtype": "Section Break"
   },
   {
    "fieldname": "total_stores",
    "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Partnership",
+   "label": "Total Store(s)",
    "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-01-15 09:40:34.588561",
+ "modified": "2020-01-15 09:39:36.381540",
  "modified_by": "Administrator",
  "module": "Master Data",
- "name": "Partner Information",
+ "name": "Managing Partner Information",
  "owner": "Administrator",
  "permissions": [
   {

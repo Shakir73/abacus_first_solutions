@@ -9,7 +9,11 @@
   "naming_series",
   "first_name",
   "last_name",
-  "full_name"
+  "full_name",
+  "section_break_5",
+  "district_manager",
+  "section_break_7",
+  "total_stores"
  ],
  "fields": [
   {
@@ -36,10 +40,31 @@
    "in_standard_filter": 1,
    "label": "Full Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "district_manager",
+   "fieldtype": "Table",
+   "label": "District Manager",
+   "options": "District Store",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_stores",
+   "fieldtype": "Int",
+   "label": "Total Store(s)",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-01-14 02:29:57.292571",
+ "modified": "2020-01-15 19:54:26.791590",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "District Manager",
@@ -60,5 +85,6 @@
  ],
  "quick_entry": 1,
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "full_name"
 }

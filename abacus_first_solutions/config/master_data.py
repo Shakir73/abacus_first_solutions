@@ -22,12 +22,18 @@ def get_data():
               "description": _("Articles which members issue and return."),
             },
             
-            # {
-            #   "type": "doctype",
-            #   "name": "District",
-            #   "label": _("District"),
-            #   "description": _("Articles which members issue and return."),
-            # },
+            {
+              "type": "doctype",
+              "name": "Managing Partner Information",
+              "label": _("Managing Partner Information"),
+              "description": _("Articles which members issue and return."),
+            },
+            {
+              "type": "doctype",
+              "name": "District Manager",
+              "label": _("District Manager"),
+              "description": _("Articles which members issue and return."),
+            },
 
           ]
       }

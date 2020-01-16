@@ -232,12 +232,6 @@
    "label": "Managing Partner Details"
   },
   {
-   "fieldname": "managing_partner",
-   "fieldtype": "Table",
-   "label": "Managing Partner",
-   "options": "Managing Partner"
-  },
-  {
    "fieldname": "total_share_holders",
    "fieldtype": "Int",
    "in_list_view": 1,
@@ -273,10 +267,16 @@
    "fieldtype": "Table",
    "label": "Shift Manager",
    "options": "Shift Manager Details"
+  },
+  {
+   "fieldname": "managing_partner",
+   "fieldtype": "Table",
+   "label": "Managing Partner",
+   "options": "Managing Partner Child"
   }
  ],
  "links": [],
- "modified": "2020-01-14 02:37:31.948339",
+ "modified": "2020-01-15 03:45:21.409557",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Store Information",
