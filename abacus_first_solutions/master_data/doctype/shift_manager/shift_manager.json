@@ -9,7 +9,10 @@
   "naming_series",
   "first_name",
   "last_name",
-  "full_name"
+  "full_name",
+  "stores_section",
+  "store",
+  "total_stores"
  ],
  "fields": [
   {
@@ -36,10 +39,27 @@
    "in_standard_filter": 1,
    "label": "Full Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "stores_section",
+   "fieldtype": "Section Break",
+   "label": "Store(s)"
+  },
+  {
+   "fieldname": "store",
+   "fieldtype": "Table",
+   "options": "Shift Store",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_stores",
+   "fieldtype": "Int",
+   "label": "Total Stores",
+   "read_only": 1
   }
  ],
  "links": [],
- "modified": "2020-01-14 02:32:54.347334",
+ "modified": "2020-01-16 20:30:01.260270",
  "modified_by": "Administrator",
  "module": "Master Data",
  "name": "Shift Manager",
@@ -60,5 +80,6 @@
  ],
  "quick_entry": 1,
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "title_field": "full_name"
 }

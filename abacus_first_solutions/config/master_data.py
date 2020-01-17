@@ -34,6 +34,12 @@ def get_data():
               "label": _("District Manager"),
               "description": _("Articles which members issue and return."),
             },
+            {
+              "type": "doctype",
+              "name": "Shift Manager",
+              "label": _("Shift Manager"),
+              "description": _("Articles which members issue and return."),
+            },
 
           ]
       }
