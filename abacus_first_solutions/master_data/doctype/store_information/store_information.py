@@ -32,3 +32,4 @@ class StoreInformation(Document):
 		# for fn in self.managing_partner:
 		# 	if not fn.full_name:
 		# 		fn.full_name = f"{fn.first_name} {fn.last_name}"
+	
